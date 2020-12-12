@@ -9,3 +9,10 @@ where
     }
     None
 }
+
+
+#[cfg(test)]
+mod base {
+    use super::*;
+    base_cases!(linear_search);
+}
