@@ -22,3 +22,10 @@ where
         Err(base + (arr[base] < *target) as usize)
     }
 }
+
+#[cfg(test)]
+mod base {
+    use super::*;
+
+    sorted_no_duplicates!(binary_search);
+}
